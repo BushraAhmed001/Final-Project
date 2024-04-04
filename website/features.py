@@ -26,7 +26,7 @@ def base_to_frame(db_query):
                                         "highest_spend",
                                         "best_seller",
                                         "worst_seller",
-                                        "mvp_staff"  ])
+                                        "mvp"  ])
         return df
 
 
@@ -42,7 +42,7 @@ def home():
         max_highest_spend = df["highest_spend"].max()
         mode_bestseller = df["best_seller"].mode()[0]
         mode_worst_seller = df["worst_seller"].mode()[0]
-        mode_mvp_staff = df["mvp_staff"].mode()[0]
+        mode_mvp = df["mvp"].mode()[0]
         s = df["total_income"]
         x = df["id"]
         plt.style.use('ggplot')
@@ -58,7 +58,7 @@ def home():
                             max_highest_spend=max_highest_spend,
                             mode_bestseller=mode_bestseller,
                             mode_worst_seller=mode_worst_seller,
-                            mode_mvp_staff=mode_mvp_staff,
+                            mode_mvp=mode_mvp,
                             # overview_list = overview_list,
                             er_message=er_message)
     else:
@@ -74,7 +74,7 @@ def add():
         db_highest_spend = request.form.get("highest_spend")
         db_bestseller = request.form.get("best_selling_item")
         db_worstseller = request.form.get("least_selling_item")
-        db_mvp = request.form.get("MVP_staff")
+        db_mvp = request.form.get("mvp")
         new_overview = Overview(db_total_income = db_total_income,
                                 db_highest_spend=db_highest_spend,
                                 db_bestseller= db_bestseller,
@@ -171,7 +171,7 @@ def tues():
 def wed():
     # mon_income = df["total_income"][0]
     # overview = Overview.query.all()
-    wednesday_data = Overview.query.filter_by(db_day="Tuesday").first() 
+    wednesday_data = Overview.query.filter_by(db_day="Wednesday").first() 
     if wednesday_data:
         income = wednesday_data.db_total_income
         highest_spend = wednesday_data.db_highest_spend
