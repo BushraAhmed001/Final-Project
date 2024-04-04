@@ -230,7 +230,7 @@ def thurs():
                                 worst_seller=worst_seller,
                                 mvp=mvp)
     else:
-        return render_template("thurss.html")
+        return render_template("thurs.html")
     
 # @feature.route("/thurs")
 # def thurs():
@@ -309,14 +309,14 @@ def sat():
         mvp = saturday_data.db_mvp
         # print(df)
         # print(income)
-        return render_template("satur.html",
+        return render_template("sat.html",
                                 income=income,
                                 highest_spend=highest_spend,
                                 best_seller=best_seller,
                                 worst_seller=worst_seller,
                                 mvp=mvp)
     else:
-        return render_template("saturday.html")
+        return render_template("sat.html")
 
 # @feature.route("/sat")
 # def sat():
@@ -352,14 +352,14 @@ def sun():
         mvp = sunday_data.db_mvp
         # print(df)
         # print(income)
-        return render_template("tues.html",
+        return render_template("sun.html",
                                 income=income,
                                 highest_spend=highest_spend,
                                 best_seller=best_seller,
                                 worst_seller=worst_seller,
                                 mvp=mvp)
     else:
-        return render_template("tues.html")
+        return render_template("sun.html")
 # @feature.route("/sun")
 # def sun():
 #     overview = Overview.query.all()
