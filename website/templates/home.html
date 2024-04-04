@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='home.css') }}"> 
+{% endblock %}
+
+<body>
+<div class="ha">Megabytes Coffee Shop</div>   
+<h1>Weekly overview</h1>
+{% block content %} 
+
+<hr>
+<!-- {% for income in overview_list %}
+    {{ income.db_total_income }}
+{% endfor %} -->
+<div class="dropdown">
+    <button class="dropbtn">Input your data</button>
+    <div class="dropdown-content">
+    <form method="post" action = "/add">
+    <div class="box1">
+        <section id="total-income" class="p1">
+          Total income<br>
+            <input type="text" placeholder="Add total income" name="total_income">
+        </section>
+        <section id="highest-spend" class="p1">
+          Highest Spend<br>
+            <input type="text" placeholder="Add highest spend" name="highest_spend">
+        </section>
+        </div>
+    <div class="box2">
+        <!-- <section id="best-selling-item">
+            <input type="text" placeholder="Best selling item" name="best_selling_item">
+        </section> -->
+        <section id="best-selling-item" class="p1">
+           Best Selling Item
+            <select name="best_selling_item" id="best-selling-item">
+                <option value="" disabled selected hidden>Select an item</option>
+                <option value="Tea">Tea</option>
+                <option value="Americano">Americano</option>
+                <option value="Latte">Latte</option>
+                <option value="Cappuccino">Cappuccino</option>
+                <option value="Mocha">Mocha</option>
+                <option value="Hot chocolate">Hot chocolate</option>
+                <option value="Croissant">Croissant</option>
+                <option value="Muffin">Muffin</option>
+                <option value="Toast">Toast</option>
+                <option value="Panini">Panini</option>
+                <option value="Buttered Roll">Buttered Roll</option>
+                <option value="Stroopwafel">Stroopwafel</option>
+            </select>
+           
+        </section>
+
+        <!-- <section id="least-sold-item">
+            <input type="text" placeholder="Least sold item" name="least_selling_item">
+        </section> -->
+        <section id="least-sold-item" class="p1">
+            Worst Selling Item<br>
+            <select name="least_selling_item" id="least-sold-item">
+                <option value="" disabled selected hidden>Select an item</option>
+                <option value="Tea">Tea</option>
+                <option value="Americano">Americano</option>
+                <option value="Latte">Latte</option>
+                <option value="Cappuccino">Cappuccino</option>
+                <option value="Mocha">Mocha</option>
+                <option value="Hot chocolate">Hot chocolate</option>
+                <option value="Croissant">Croissant</option>
+                <option value="Muffin">Muffin</option>
+                <option value="Toast">Toast</option>
+                <option value="Panini">Panini</option>
+                <option value="Buttered Roll">Buttered Roll</option>
+                <option value="Stroopwafel">Stroopwafel</option>
+            </select>
+          
+        </section>
+        
+    </div>
+
+    <div class="box3">
+        
+        <section id="MVP-staff" class="p1">
+           Most Valued Staff<br>
+            <select name="MVP_STAFF" id="MVP-staff">
+                <option value="" disabled selected hidden>Select a staff member</option>
+                <option value="Alex">Alex</option>
+                <option value="Charlie">Charlie</option>
+                <option value="Emma">Emma</option>
+                <option value="Hayley">Hayley</option>
+                <option value="Ima">Ima</option>
+                <option value="Olu">Olu</option>
+            </select>
+        </section>
+        <section id="day" class="p1">
+            Day of the Week<br>
+            <select name="day" id="day">
+                <option value="" disabled selected hidden>Select a day</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </section>
+        
+        
+          
+        
+    </div>
+    <div class="enter">
+        <input type="submit">
+        </div>
+    </div>
+</div>
+
+</form>
+<div class="whole">
+<div class="results">
+    <div class="total">
+<p>  Total Income
+{{max_total_income}} </p>
+</div>
+<div class="high">
+<p>Highest Spend  
+{{max_highest_spend}} </p>
+</div> 
+ <!-- </div> -->
+<!-- <div class="results2"> -->
+<section class = "best">
+    <p>Best seller
+        {{mode_bestseller}}
+    </p>
+    </section>
+    
+        <section class = "least">
+        <p>Worst seller
+        {{mode_worst_seller}}
+    </p>
+    </section>
+    <!-- </div> -->
+    <section class = "mvp">
+        <p>MVP Staff
+        {{mode_mvp_staff}}
+    </p>
+    </section>
+   
+    </div>
+
+<div class="graph">
+    <img src="{{ url_for('static', filename='images/my_plot.png') }}">
+</div>
+
+
+
+{% endblock %}
+</body>
+</html>

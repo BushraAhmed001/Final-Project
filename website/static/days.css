@@ -1,0 +1,94 @@
+body {
+    background-color:lightskyblue;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+form {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:slategray;
+    text-decoration:dashed;
+}
+
+nav a {
+    color:black;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+nav :hover{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:white;
+}
+.ha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration:double;
+    text-decoration-style:solid;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-style:dashed;
+}
+
+.whole {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    margin: 1%;
+    width: 87.5%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
+
+.graph, .graph1 {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+    margin: 1%;
+    width: 87.5%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) dashed;
+}
+
+.lsec {
+    width: 100%;
+}
+
+.mvp, .best, .least, .profit{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width: 87.5%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
+
+p {
+    font-size: 40px;
+}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='days.css') }}"> 
+{% endblock %}
+{% block content %} <div class="monday">
+    <header>
+        <h1>Sunday overview</h1>
+    </header>
+
+    <div class="whole">
+        <div class="lsec">
+            <div class="mvp">
+                <p>MVP
+                    {{mvp}}
+                </p>
+            </div>
+            <div class="best">
+              <p>Best selling item 
+                {{best_seller}}
+              </p> 
+            </div> 
+            <div class="least">
+               <p>Least sold item
+                {{worst_seller}}
+               </p> 
+              </div> 
+              <div class="profit">
+                <p>Overall profit
+                    {{income}}
+                </p>
+               </div> 
+
+    </div>
+</div>
+   
+    
+    </div>{% endblock %}

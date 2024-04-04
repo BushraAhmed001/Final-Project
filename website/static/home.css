@@ -1,0 +1,181 @@
+body {
+    background-color:steelblue;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.ha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:darkblue ;
+    font-size: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration:double;
+    text-decoration-style:solid;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:slategray;
+    text-decoration:dashed;
+}
+
+nav a {
+    color:black;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+nav :hover{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:blue;
+}
+
+h1 {
+    display: flex;
+    text-align:center;
+}
+h2 {
+    display: flex;
+    text-align: right;
+}
+
+p {
+    font-size: xx-large;
+    color: darkblue;
+    font-weight: bold;
+    font-variant:initial;
+
+}
+.p1 {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    font-variant:initial;
+
+}
+
+.monday {
+    background-color: aqua;
+}
+dropdown {
+    display: inline-block;
+}
+.dropbtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    background-color:white;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    min-width: 60%;
+    border: 1px solid #ccc;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+.dropbtn:hover {
+    background-color: #45a049;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropbtn:active {
+    background-color: #398038;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+.box1, .box2, .box3, .week{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+    width: 89%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+
+}
+
+    #day, #MVP-staff, #least-sold-item, #best-selling-item, #highest-spend, #total-income {
+        width: 200px; /* Adjust the width as needed */
+    }
+
+.results, .results2 {
+    background-color: gainsboro;
+    display: flex;
+    
+    margin-bottom: 1%;
+    width: 90%;
+    padding: 5%;
+    /* border: 5px rgb(89, 87, 87) solid; */
+}
+
+
+
+.total, .best, .high, .least{
+    background-color: gainsboro;
+    display: flex;
+    margin-bottom: 1%;
+    width: 90%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
+
+.mvp {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 90%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
+
+
+
+.graph{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    width: 90%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
+
+
+
