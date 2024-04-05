@@ -46,11 +46,12 @@ def home():
         s = df["total_income"]
         x = df["id"]
         plt.style.use('ggplot')
-        plt.figure(figsize=(6,4)) 
-        plt.bar(df['id'], df['total_income'], color='skyblue')
+        plt.figure(figsize=(9,7)) 
+        plt.plot()
         plt.title("Total Income by Day")
-        plt.xlabel("day")
+        plt.xlabel("Day")
         plt.ylabel("Total Income")
+        plt.tight_layout()
         plt.savefig('./website/static/images/my_plot.png')
 
         return render_template("home.html",

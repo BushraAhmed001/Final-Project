@@ -9,9 +9,7 @@
 {% block content %} 
 
 <hr>
-<!-- {% for income in overview_list %}
-    {{ income.db_total_income }}
-{% endfor %} -->
+
 <div class="dropdown">
     <button class="dropbtn">Input your data</button>
     <div class="dropdown-content">
@@ -114,37 +112,39 @@
 </div>
 
 </form>
+
 <div class="whole">
-<div class="results">
-    <div class="total">
-<p>  Total Income
-{{max_total_income}} </p>
-</div>
-<div class="high">
-<p>Highest Spend  
-{{max_highest_spend}} </p>
-</div> 
+<div class="lsec">
+    <!-- <div class="total"> -->
+<p>Total Income:
+ <nav>{{max_total_income}}</nav></p>
+<!-- </div>
+<div class="high"> -->
+<p>Highest Spend: 
+ <nav>{{max_highest_spend}} </nav></p>
+<!-- </div>  -->
  <!-- </div> -->
 <!-- <div class="results2"> -->
-<section class = "best">
-    <p>Best seller
-        {{mode_bestseller}}
-    </p>
-    </section>
+<!-- <section class = "best"> -->
+    <p>Best seller:
+       <nav> {{mode_bestseller}} </nav></p>
+    <!-- </p>
+    </section> -->
     
-        <section class = "least">
-        <p>Worst seller
-        {{mode_worst_seller}}
+        <!-- <section class = "least"> -->
+        <p>Worst seller:
+         <nav>{{mode_worst_seller}}</nav>
     </p>
-    </section>
+    <!-- </section> -->
     <!-- </div> -->
-    <section class = "mvp">
-        <p>MVP Staff
-        {{mode_mvp}}
+    <!-- <section class = "mvp"> -->
+        <p>MVP Staff:
+         <nav>{{mode_mvp}}</nav>
     </p>
-    </section>
+    <!-- </section> -->
    
     </div>
+</div>
 
 <div class="graph">
     <img src="{{ url_for('static', filename='images/my_plot.png') }}">

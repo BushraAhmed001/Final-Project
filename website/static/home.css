@@ -5,6 +5,22 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+.lsec {
+    width: 100%;
+}
+
+.whole {
+    background-color: gainsboro;
+    color:darkblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    margin: 1%;
+    width: 87.5%;
+    padding: 5%;
+    border: 5px rgb(89, 87, 87) solid;
+}
 .ha {
     display: flex;
     justify-content: center;
@@ -16,7 +32,17 @@ body {
     text-decoration:double;
     text-decoration-style:solid;
 }
-
+.nava {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:azure;
+    border: 3px black;
+    /* text-decoration:underline; */
+    color:black;
+    font-family: monospace;
+    font-size: 20px;
+}
 
 nav {
     display: flex;
@@ -38,7 +64,17 @@ nav :hover{
     align-items: center;
     color:blue;
 }
-
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:azure;
+    border: 3px darkblue;
+    /* text-decoration:underline; */
+    color: darkblue;
+    font-family: monospace;
+    font-size: 70px;
+}
 h1 {
     display: flex;
     text-align:center;
@@ -66,7 +102,7 @@ p {
 .monday {
     background-color: aqua;
 }
-dropdown {
+.dropdown {
     display: inline-block;
 }
 .dropbtn {
@@ -97,7 +133,7 @@ dropdown {
     background-color: #45a049;
 }
 
-.dropdown-content a:hover {
+.dropdown-content :hover {
     background-color: #ddd;
 }
 .dropbtn:active {
@@ -116,7 +152,7 @@ dropdown {
     align-items: center;
 }
 
-form {
+.form {
     width: 100%;
 }
 
@@ -131,7 +167,7 @@ form {
 }
 
     #day, #MVP-staff, #least-sold-item, #best-selling-item, #highest-spend, #total-income {
-        width: 200px; /* Adjust the width as needed */
+        width: 200px; 
     }
 
 .results, .results2 {
@@ -176,6 +212,3 @@ form {
     padding: 5%;
     border: 5px rgb(89, 87, 87) solid;
 }
-
-
-

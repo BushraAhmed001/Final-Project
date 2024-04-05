@@ -1,5 +1,5 @@
 body {
-    background-color:lightskyblue;
+    background-color: steelblue;
     margin: 0;
     padding: 20px;
     overflow-x: hidden;
@@ -50,8 +50,8 @@ h1 {
     color:darkblue;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform: capitalize;
-    text-decoration: underline;
-    text-decoration-style:dashed;
+    /* text-decoration: underline;
+    text-decoration-style:dashed; */
 }
 
 .whole {
@@ -75,7 +75,7 @@ h1 {
     margin: 1%;
     width: 87.5%;
     padding: 5%;
-    border: 5px rgb(89, 87, 87) dashed;
+    border: 5px rgb(89, 87, 87) solid;
 }
 
 .lsec {
@@ -95,4 +95,26 @@ h1 {
 
 p {
     font-size: 40px;
+}
+.nava {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:azure;
+    border: 3px black;
+    /* text-decoration:underline; */
+    color:black;
+    font-family: monospace;
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:azure;
+    border: 3px darkblue;
+    /* text-decoration:underline; */
+    color:darkblue;
+    font-family: monospace;
+    font-size: 70px;
 }

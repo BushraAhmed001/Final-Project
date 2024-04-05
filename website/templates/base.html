@@ -12,7 +12,7 @@
 
 <body>
  <p><div class="ha">Megabytes Coffee Shop</div></p>   
-    <nav>
+    <div class=nava>
         <a href="{{ url_for('feature.home') }}">Week overview</a>
         <a href="{{ url_for('feature.mon') }}">Monday</a>
         <a href="{{ url_for('feature.tues') }}">Tuesday</a>
@@ -21,7 +21,7 @@
         <a href="{{ url_for('feature.fri') }}">Friday</a>
         <a href="{{ url_for('feature.sat') }}">Saturday</a>
         <a href="{{ url_for('feature.sun') }}">Sunday</a>
-
+    </div>
 </nav>
 
 {% block content %}
